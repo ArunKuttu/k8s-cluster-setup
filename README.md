@@ -4,15 +4,19 @@ k8s-cluster-setup
 Kubeadm Installation Guide
 Prerequisites
 
+
 Ubuntu OS (Xenial or later) sudo privileges Internet access t2.medium instance type or higher
 AWS Setup
+
 
 Ensure that all instances are in the same Security Group. Expose port 6443 in the Security Group to allow worker nodes to join the cluster. Expose port 22 in the Security Group to allows SSH access to manage the instance.
 Execute on Both "Master" & "Worker" Nodes
 
+
 Disable Swap: Required for Kubernetes to function correctly.
 
 sudo swapoff -a
+
 
 Load Necessary Kernel Modules: Required for Kubernetes networking.
 
