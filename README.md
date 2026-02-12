@@ -17,7 +17,7 @@ Disable Swap: Required for Kubernetes to function correctly.
 
             sudo swapoff -a
 
-Note:Make sure to do the swapoff in boot level else once the server restart the kubelet service wont't start automatically will get an error          
+     Note:Make sure to do the swapoff in boot level else once the server restart the kubelet service wont't start automatically will get an error          
             
 Load Necessary Kernel Modules: Required for Kubernetes networking.
 
